@@ -1,0 +1,2 @@
+# monostore
+Mono store theme

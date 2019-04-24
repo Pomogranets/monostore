@@ -1,0 +1,1 @@
+<!-- Functions.php allows you to add your own custom PHP functions or to modify existing Wordpress functions through the different hooks that they provide (see 4.1 Hooks and filters). It is often used to configure feature support, specify widget areas or add custom admin panel options. -->

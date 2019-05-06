@@ -44,10 +44,49 @@ ul, li, ol {
   padding: 0;
 }
 
+/*----------- Header -----------*/
+header {
+  overflow: hidden;
+  margin: 20px;
+}
+
+header .main-logo {
+  width: 15%;
+  height: auto;
+  float: left;
+  margin-right: 30px;
+}
+
+header ul {
+  margin-top: 35px;
+}
+
+header li {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  float: left;
+}
+
+header li > a {
+  padding: 16px;
+}
+
+header li a:hover {
+  color: #A7A6A2;
+}
+
+header li a:active{
+  color: #A7A6A2;
+}
+
 /*----------- Footer -----------*/
 footer {
   background-color: #000;
   padding: 16px;
+}
+footer h2 {
+  color: white;
+  font-size: 16px;
 }
 
 footer p {

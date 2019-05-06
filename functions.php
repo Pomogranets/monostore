@@ -78,7 +78,7 @@ function brands_post_type() {
     register_post_type('Brand', $args );
 }
 /* Register custom post types on the 'init' hook. */
-add_action( 'init', 'brand_post_type' );
+add_action( 'init', 'brands_post_type' );
 
 
 //this creates the custom menu items

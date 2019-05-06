@@ -21,7 +21,7 @@ function art_post_type() {
           'name'               => __( 'Art',                   'project-textdomain' ),
           'singular_name'      => __( 'Art',                    'project-textdomain' ),
           'menu_name'          => __( 'Arts',                   'project-textdomain' ),
-          'name_admin_bar'     => __( 'Konst',                   'project-textdomain' ),
+          'name_admin_bar'     => __( 'Arts',                   'project-textdomain' ),
           'add_new'            => __( 'Add New',                    'project-textdomain' ),
           'add_new_item'       => __( 'Add New Art',            'project-textdomain' ),
           'edit_item'          => __( 'Edit Art',               'project-textdomain' ),
@@ -39,6 +39,47 @@ function art_post_type() {
 }
 /* Register custom post types on the 'init' hook. */
 add_action( 'init', 'art_post_type' );
+
+//add custom post type for BRANDS
+function brands_post_type() {
+
+    $args = array(
+
+        'public' => true,
+
+        'menu_icon' => 'dashicons-portfolio',
+
+        'hierarchical' => false,
+
+        'has_archive' => true,
+
+        'supports' => array('title','editor','author','thumbnail', 'custom-fields'),
+
+        'taxonomies' => array( 'category', ' tag' ),
+
+        'labels' => array(
+          'name'               => __( 'Brand',                   'project-textdomain' ),
+          'singular_name'      => __( 'Brand',                    'project-textdomain' ),
+          'menu_name'          => __( 'Brands',                   'project-textdomain' ),
+          'name_admin_bar'     => __( 'Brands',                   'project-textdomain' ),
+          'add_new'            => __( 'Add New',                    'project-textdomain' ),
+          'add_new_item'       => __( 'Add New Brand',            'project-textdomain' ),
+          'edit_item'          => __( 'Edit Brand',               'project-textdomain' ),
+          'new_item'           => __( 'New Brand',                'project-textdomain' ),
+          'view_item'          => __( 'View Brand',               'project-textdomain' ),
+          'search_items'       => __( 'Search Brand',            'project-textdomain' ),
+          'not_found'          => __( 'No Brand found',          'project-textdomain' ),
+          'not_found_in_trash' => __( 'No Brand found in trash', 'project-textdomain' ),
+          'all_items'          => __( 'All Brand',               'project-textdomain' ),
+        )
+    );
+
+    /* Register the post type. */
+    register_post_type('Brand', $args );
+}
+/* Register custom post types on the 'init' hook. */
+add_action( 'init', 'brand_post_type' );
+
 
 //this creates the custom menu items
 function register_my_menus() {

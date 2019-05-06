@@ -1,5 +1,45 @@
 <?php
 
+//add custom post type for ART PAGE
+function art_post_type() {
+
+    $args = array(
+
+        'public' => true,
+
+        'menu_icon' => 'dashicons-portfolio',
+
+        'hierarchical' => false,
+
+        'has_archive' => true,
+
+        'supports' => array('title','editor','author','thumbnail', 'custom-fields'),
+
+        'taxonomies' => array( 'category', ' tag' ),
+
+        'labels' => array(
+          'name'               => __( 'Art',                   'project-textdomain' ),
+          'singular_name'      => __( 'Art',                    'project-textdomain' ),
+          'menu_name'          => __( 'Arts',                   'project-textdomain' ),
+          'name_admin_bar'     => __( 'Konst',                   'project-textdomain' ),
+          'add_new'            => __( 'Add New',                    'project-textdomain' ),
+          'add_new_item'       => __( 'Add New Art',            'project-textdomain' ),
+          'edit_item'          => __( 'Edit Art',               'project-textdomain' ),
+          'new_item'           => __( 'New Art',                'project-textdomain' ),
+          'view_item'          => __( 'View Art',               'project-textdomain' ),
+          'search_items'       => __( 'Search Art',            'project-textdomain' ),
+          'not_found'          => __( 'No Art found',          'project-textdomain' ),
+          'not_found_in_trash' => __( 'No Art found in trash', 'project-textdomain' ),
+          'all_items'          => __( 'All Art',               'project-textdomain' ),
+        )
+    );
+
+    /* Register the post type. */
+    register_post_type('Art', $args );
+}
+/* Register custom post types on the 'init' hook. */
+add_action( 'init', 'art_post_type' );
+
 //this creates the custom menu items
 function register_my_menus() {
   register_nav_menus(
@@ -18,7 +58,7 @@ add_theme_support( 'post-formats' );
 
 //this adds image size rules
 add_image_size( 'header_logo', 100, 100, true );
-add_image_size( 'grid_thumbnail', 300, 300, true );
+add_image_size( 'small_thumbnail', 300, 300, true );
 add_image_size( 'single_art', 420, 420, true );
 add_image_size( 'extra_large', 700, 700, true );
 

@@ -15,6 +15,9 @@ if( have_posts() ) {
       </div>
 
 <?php
+    } //end of while
+
+} //end of if
 
 wp_reset_postdata();
 ?>

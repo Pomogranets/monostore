@@ -100,3 +100,118 @@ footer .social-icons i {
   color: white;
   font-size: 18px;
 }
+
+/*----------- Contact -----------*/
+#page {
+  overflow: hidden;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/*Contact Form*/
+#form-contact {
+    width: 70%;
+    float: left;
+  }
+
+#contact-form {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 32px auto;
+    padding: 0 30px;
+  }
+
+  #contact-form > label {
+    display: block;
+    position: relative;
+    top: -20px;
+    left: 0px;
+    color: #000;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+
+  .form-feild {
+    display: block;
+    position: relative;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .form-feild:focus{
+    outline: none;
+    border-bottom: 1px solid #00aced;
+  }
+
+  /*Label style is affected each time the field is clicked*/
+  #contact-form > input:focus + label, #contact-form >  input:valid + label, #contact-form > select:focus + label, #contact-form >  select:valid + label {
+    top: -40px;
+    font-size: 11px;
+    color: #00aced;
+  }
+
+  #contact-form > textarea:focus + label, #contact-form > textarea:valid + label  {
+    font-size: 11px;
+    color: #00aced;
+  }
+
+  #contact-form > textarea {
+    display: block;
+    position: relative;
+    background: none;
+    border: 1px solid #000;
+    width: 100%;
+    z-index: 2;
+    font-family:"Times New Roman", Times, serif;  
+    height: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+      
+  }
+
+  #contact-form > textarea:focus {
+    outline: none;
+    border: 1px solid #00aced;
+  }
+
+  /*The contact information*/
+  #contact-info {
+    width: 30%;
+    float: left;
+    margin: 32px auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+   #contact-info h3{
+    margin: 16px 0 8px 0;
+    padding: 0 32px;
+   }
+
+   #contact-info p {
+    padding: 0 32px;
+    margin: 0 0 16px 0;
+   }
+
+  
+  .contact-content {
+    width: 45%;
+    text-align: center;
+    margin: 0 27.5%;
+  }
+
+  .button {
+    border: 2px solid #000;
+    width: 164px;
+    height: 68px;
+    box-sizing: border-box;
+    padding: 8px;
+    background: none;
+    float: right;
+    margin-top: 16px;
+  }

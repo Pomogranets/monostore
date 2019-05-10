@@ -84,6 +84,12 @@ header li a:active{
 }
 
 /*----------- About -----------*/
+.all-brands {
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
 
 .grid-container {
   margin: 40px;
@@ -100,11 +106,6 @@ header li a:active{
 .grid-container figcaption:hover {
   color: #A7A6A2;
   font-weight: bold;
-}
-
-.grid-container h3 {
-  font-weight: 300;
-  font-size: 80%;
 }
 
 

@@ -1,5 +1,5 @@
 <?php get_header();
-echo "I AM WORKING";
+
 if( have_posts() ) {
 
     while ( have_posts() ){
@@ -37,7 +37,7 @@ $args = array(
 // The Query
 $query = new WP_Query( $args );
 ?>
-  <div class="all-grid">
+  <div class="all-brands">
 
 <?php
 if ( $query->have_posts() ) {

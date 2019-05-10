@@ -25,7 +25,7 @@ $args = array(
 // The Query
 $query = new WP_Query( $args );
 ?>
-  <div class="all-brands">
+  <div class="all-art">
 
 <?php
 if ( $query->have_posts() ) {

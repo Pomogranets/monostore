@@ -133,5 +133,16 @@ function add_google_fonts() {
 add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
 
 
+//Register our sidebars and widgetized areas.
+
+function my_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Footer',
+		'id'            => 'footer'
+	) );
+
+}
+add_action( 'widgets_init', 'my_widgets_init' );
 
 ?>

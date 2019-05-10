@@ -31,7 +31,7 @@ if( have_posts() ) {
 $args = array(
     'post_type'              => 'Brand',
     'post_status'            => 'publish',
-    'posts_per_page'         => 3,
+    // 'posts_per_page'         => 3,
 );
 
 // The Query
@@ -51,7 +51,7 @@ if ( $query->have_posts() ) {
     <div class="grid-container">
 
         <a href=" <?php the_permalink(); ?>">
-          <figure class="brand-thumbnail"> <?php the_post_thumbnail('grid_thumbnail',  array( 'class' => 'brand-grid' )); ?> </figure>
+          <figure class="brand-thumbnail"> <?php the_post_thumbnail('small_thumbnail',  array( 'class' => 'brand-grid' )); ?> </figure>
           <figcaption class="brand-title"> <?php the_title(); ?> </figcaption>
         </a>
       </div>

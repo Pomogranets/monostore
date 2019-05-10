@@ -1,7 +1,7 @@
 <?php
 
 //add custom post type for ART PAGE
-function art_post_type() {
+function konst_post_type() {
 
     $args = array(
 
@@ -18,27 +18,27 @@ function art_post_type() {
         'taxonomies' => array( 'category', ' tag' ),
 
         'labels' => array(
-          'name'               => __( 'Art',                   'project-textdomain' ),
-          'singular_name'      => __( 'Art',                    'project-textdomain' ),
-          'menu_name'          => __( 'Arts',                   'project-textdomain' ),
-          'name_admin_bar'     => __( 'Arts',                   'project-textdomain' ),
+          'name'               => __( 'Konst',                   'project-textdomain' ),
+          'singular_name'      => __( 'Konst',                    'project-textdomain' ),
+          'menu_name'          => __( 'Konst',                   'project-textdomain' ),
+          'name_admin_bar'     => __( 'Konst',                   'project-textdomain' ),
           'add_new'            => __( 'Add New',                'project-textdomain' ),
-          'add_new_item'       => __( 'Add New Art',            'project-textdomain' ),
-          'edit_item'          => __( 'Edit Art',               'project-textdomain' ),
-          'new_item'           => __( 'New Art',                'project-textdomain' ),
-          'view_item'          => __( 'View Art',               'project-textdomain' ),
-          'search_items'       => __( 'Search Art',            'project-textdomain' ),
-          'not_found'          => __( 'No Art found',          'project-textdomain' ),
-          'not_found_in_trash' => __( 'No Art found in trash', 'project-textdomain' ),
-          'all_items'          => __( 'All Art',               'project-textdomain' ),
+          'add_new_item'       => __( 'Add New Konst',            'project-textdomain' ),
+          'edit_item'          => __( 'Edit Konst',               'project-textdomain' ),
+          'new_item'           => __( 'New Konst',                'project-textdomain' ),
+          'view_item'          => __( 'View Konst',               'project-textdomain' ),
+          'search_items'       => __( 'Search Konst',            'project-textdomain' ),
+          'not_found'          => __( 'No Konst found',          'project-textdomain' ),
+          'not_found_in_trash' => __( 'No Konst found in trash', 'project-textdomain' ),
+          'all_items'          => __( 'All Konst',               'project-textdomain' ),
         )
     );
 
     /* Register the post type. */
-    register_post_type('Art', $args );
+    register_post_type('konst', $args );
 }
 /* Register custom post types on the 'init' hook. */
-add_action( 'init', 'art_post_type' );
+add_action( 'init', 'konst_post_type' );
 
 //add custom post type for BRANDS
 function varumarken_post_type() {

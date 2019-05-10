@@ -26,7 +26,7 @@ if( have_posts() ) {
 $args = array(
     'post_type'              => 'varumarken',
     'post_status'            => 'publish',
-    // 'posts_per_page'         => 3,
+    'posts_per_page'         => -1,
 );
 
 // The Query

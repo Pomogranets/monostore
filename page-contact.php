@@ -31,12 +31,23 @@ if(have_posts()) {
    $mail = $_POST['mail'];
    $message = $_POST['meddelande'];
 
-   $message = 'From: '.$uname.', '.$mail. '
-    '.$message;
+   $body = '<html>
+              <body>
+                <h2>Test email</h2> <br>
+                <p>Namn: '.$uname.'</p> <br>
+                <p>Mailadress '.$mail.'</p> <br>
+                <p>'.$message.'</p>
+              </body>
+            </html>';
 
-   wp_mail($to,$subject,$message);
+    $headers = 'From: '.$name.' <'.$mail.'>\r\n';
+    $headers .= 'Reply-To: '.$mail.'\r\n';
+    $headers .= 'MINE-Version: 1.0\r\n';
+    $headers .= 'Content-type: text/html; charset-utf-8';
 
-   if( wp_mail($to,$subject,$message))
+   $sent = wp_mail($to,$subject,$body, $headers);
+
+   if($sent)
    {
      echo "mail sent - currently not working"; //does not work
    }
@@ -47,7 +58,7 @@ if(have_posts()) {
  }
 
 echo '<section id="form-contact">
-	<form id="contact-form" method="post">
+	<form id="contact-form" method="post" action="">
 	<input class="form-feild" type="text" name="uName" required autocomplete="off">
 	<label for="firstName">Name</label>
 	<br> <br>
@@ -68,6 +79,14 @@ echo '<section id="form-contact">
 </form>
 </section>
 
+';
+
+//Sidebar for contact info widget
+if ( is_active_sidebar( 'contact' ) ) {
+  dynamic_sidebar( 'contact' );
+}
+
+/* This is the code for the widget > use a text widget (then add the html code to the text editor)
 <section id="contact-info">
 	<div>
     <h3>Kontakt:</h3>
@@ -90,12 +109,11 @@ echo '<section id="form-contact">
         Söndag: stängt. <br>
         (med reservation för ändringar)</p>
     </div>
-</section>';
+</section>';*/
 
 echo '</div>';
 
 	wp_reset_postdata();
 	get_footer(); 
 ?>
-
     

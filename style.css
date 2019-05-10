@@ -44,6 +44,10 @@ ul, li, ol {
   padding: 0;
 }
 
+.site-container {
+ max-width: 1080px;
+}
+
 /*----------- Header -----------*/
 header {
   overflow: hidden;
@@ -51,7 +55,7 @@ header {
 }
 
 header .main-logo {
-  width: 15%;
+  width: 10%;
   height: auto;
   float: left;
   margin-right: 30px;
@@ -77,6 +81,41 @@ header li a:hover {
 
 header li a:active{
   color: #A7A6A2;
+}
+
+/*----------- About -----------*/
+.site-title {
+  font-size: 20px;
+  color: yellow;
+}
+
+.site-parag {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.all-brands {
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.grid-container {
+  margin: 40px;
+  float: left;
+  text-align: center;
+}
+
+
+.grid-container figcaption {
+  font-size: 110%;
+  margin: 10px 0 5px 0;
+}
+
+.grid-container figcaption:hover {
+  color: #A7A6A2;
+  font-weight: bold;
 }
 
 /*----------- Footer -----------*/
@@ -167,11 +206,11 @@ footer .social-icons i {
     border: 1px solid #000;
     width: 100%;
     z-index: 2;
-    font-family:"Times New Roman", Times, serif;  
+    font-family:"Times New Roman", Times, serif;
     height: 100px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-      
+
   }
 
   #contact-form > textarea:focus {
@@ -198,7 +237,7 @@ footer .social-icons i {
     margin: 0 0 16px 0;
    }
 
-  
+
   .contact-content {
     width: 45%;
     text-align: center;
@@ -252,12 +291,22 @@ footer .social-icons i {
 }
 
 .front-page-body .blocks-gallery-item {
+	margin-top: 32px;
+}
+
+.front-page-body ul {
+	margin-top: 24px;
+	margin-bottom: 0px;
+}
+
+.front-page-body li {
 	position: relative;
 	margin: 0px;
 }
 
 
 .front-page-body .blocks-gallery-item::after {
+
  	content: "";
 	position: absolute;
 	display: inline-block;
@@ -271,17 +320,17 @@ footer .social-icons i {
 	background-repeat: no-repeat;
 	color: #FEFEFE;
 	opacity: 1;
-	
+
 	transition: opacity .2s, visibility .2s;
 }
+
 
 
 .front-page-body .blocks-gallery-item + .blocks-gallery-item::after{
 	background-image: url(http://monostore.local/wp-content/uploads/2019/05/Facebook.png);
 }
 
-
-/*----------- Homepage -----------*/
+/*----------- 404 page -----------*/
 
 .error-page-body {
 	max-width: 1080px;
@@ -389,3 +438,4 @@ footer .social-icons i {
 .summary.entry-summary {
 	float: right;
 }
+

@@ -7,7 +7,7 @@ function art_post_type() {
 
         'public' => true,
 
-        'menu_icon' => 'dashicons-portfolio',
+        'menu_icon' => 'dashicons-format-image',
 
         'hierarchical' => false,
 
@@ -22,7 +22,7 @@ function art_post_type() {
           'singular_name'      => __( 'Art',                    'project-textdomain' ),
           'menu_name'          => __( 'Arts',                   'project-textdomain' ),
           'name_admin_bar'     => __( 'Arts',                   'project-textdomain' ),
-          'add_new'            => __( 'Add New',                    'project-textdomain' ),
+          'add_new'            => __( 'Add New',                'project-textdomain' ),
           'add_new_item'       => __( 'Add New Art',            'project-textdomain' ),
           'edit_item'          => __( 'Edit Art',               'project-textdomain' ),
           'new_item'           => __( 'New Art',                'project-textdomain' ),
@@ -41,13 +41,13 @@ function art_post_type() {
 add_action( 'init', 'art_post_type' );
 
 //add custom post type for BRANDS
-function brands_post_type() {
+function varumarken_post_type() {
 
     $args = array(
 
         'public' => true,
 
-        'menu_icon' => 'dashicons-portfolio',
+        'menu_icon' => 'dashicons-store',
 
         'hierarchical' => false,
 
@@ -58,27 +58,27 @@ function brands_post_type() {
         'taxonomies' => array( 'category', ' tag' ),
 
         'labels' => array(
-          'name'               => __( 'Brand',                   'project-textdomain' ),
-          'singular_name'      => __( 'Brand',                    'project-textdomain' ),
-          'menu_name'          => __( 'Brands',                   'project-textdomain' ),
-          'name_admin_bar'     => __( 'Brands',                   'project-textdomain' ),
+          'name'               => __( 'Varumarken',                   'project-textdomain' ),
+          'singular_name'      => __( 'Varumarken',                    'project-textdomain' ),
+          'menu_name'          => __( 'Varumarken',                   'project-textdomain' ),
+          'name_admin_bar'     => __( 'Varumarken',                   'project-textdomain' ),
           'add_new'            => __( 'Add New',                    'project-textdomain' ),
-          'add_new_item'       => __( 'Add New Brand',            'project-textdomain' ),
-          'edit_item'          => __( 'Edit Brand',               'project-textdomain' ),
-          'new_item'           => __( 'New Brand',                'project-textdomain' ),
-          'view_item'          => __( 'View Brand',               'project-textdomain' ),
-          'search_items'       => __( 'Search Brand',            'project-textdomain' ),
-          'not_found'          => __( 'No Brand found',          'project-textdomain' ),
-          'not_found_in_trash' => __( 'No Brand found in trash', 'project-textdomain' ),
-          'all_items'          => __( 'All Brand',               'project-textdomain' ),
+          'add_new_item'       => __( 'Add New Varumarken',            'project-textdomain' ),
+          'edit_item'          => __( 'Edit Varumarken',               'project-textdomain' ),
+          'new_item'           => __( 'New Varumarken',                'project-textdomain' ),
+          'view_item'          => __( 'View Varumarken',               'project-textdomain' ),
+          'search_items'       => __( 'Search Varumarken',            'project-textdomain' ),
+          'not_found'          => __( 'No Varumarken found',          'project-textdomain' ),
+          'not_found_in_trash' => __( 'No Varumarken found in trash', 'project-textdomain' ),
+          'all_items'          => __( 'All Varumarken',               'project-textdomain' ),
         )
     );
 
     /* Register the post type. */
-    register_post_type('Brand', $args );
+    register_post_type('varumarken', $args );
 }
 /* Register custom post types on the 'init' hook. */
-add_action( 'init', 'brands_post_type' );
+add_action( 'init', 'varumarken_post_type' );
 
 
 //this creates the custom menu items
@@ -125,12 +125,14 @@ function change_logo_class($html) {
 	return $html;
 }
 
-//add google fonts
-function add_google_fonts() {
-      wp_enqueue_style( 'custom-google-fonts', '<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:400,700,800" rel="stylesheet">', false );
-}
+//Register our sidebars and widgetized areas.
 
-add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
+function my_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Footer',
+		'id'            => 'footer'
+	) );
 
 //woocommerce support
 function customtheme_add_woocommerce_support()
@@ -138,5 +140,16 @@ function customtheme_add_woocommerce_support()
 add_theme_support( 'woocommerce' );
 }
 add_action( 'after_setup_theme', 'customtheme_add_woocommerce_support' );
+}
 
-?>
+add_action( 'widgets_init', 'my_widgets_init' );
+
+function my_contact_init() {
+
+  register_sidebar( array(
+    'name'          => 'Contact',
+    'id'            => 'contact'
+  ) );
+
+}
+add_action( 'widgets_init', 'my_contact_init' );

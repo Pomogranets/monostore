@@ -83,6 +83,31 @@ header li a:active{
   color: #A7A6A2;
 }
 
+/*----------- About -----------*/
+
+.grid-container {
+  margin: 40px;
+  float: left;
+  text-align: center;
+}
+
+
+.grid-container figcaption {
+  font-size: 110%;
+  margin: 10px 0 5px 0;
+}
+
+.grid-container figcaption:hover {
+  color: #A7A6A2;
+  font-weight: bold;
+}
+
+.grid-container h3 {
+  font-weight: 300;
+  font-size: 80%;
+}
+
+
 /*----------- Footer -----------*/
 footer {
   background-color: #000;
@@ -266,7 +291,7 @@ footer .social-icons i {
 }
 
 
-/*----------- Homepage -----------*/
+/*----------- 404 page -----------*/
 
 .error-page-body {
 	max-width: 1080px;

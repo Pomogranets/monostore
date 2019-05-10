@@ -29,7 +29,7 @@ if( have_posts() ) {
 };
 //Custom Loop - show latest projects
 $args = array(
-    'post_type'              => 'brands',
+    'post_type'              => 'Brand',
     'post_status'            => 'publish',
     'posts_per_page'         => 3,
 );
@@ -38,8 +38,6 @@ $args = array(
 $query = new WP_Query( $args );
 ?>
   <div class="all-grid">
-
-    <h2 class="sub-title"> Varumärken </h2>
 
 <?php
 if ( $query->have_posts() ) {
@@ -53,8 +51,8 @@ if ( $query->have_posts() ) {
     <div class="grid-container">
 
         <a href=" <?php the_permalink(); ?>">
-          <figure class="project-thumbnail"> <?php the_post_thumbnail('grid_thumbnail',  array( 'class' => 'project-grid' )); ?> </figure>
-          <figcaption class="project-title"> <?php the_title(); ?> </figcaption>
+          <figure class="brand-thumbnail"> <?php the_post_thumbnail('grid_thumbnail',  array( 'class' => 'brand-grid' )); ?> </figure>
+          <figcaption class="brand-title"> <?php the_title(); ?> </figcaption>
         </a>
       </div>
 

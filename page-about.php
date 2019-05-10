@@ -16,15 +16,17 @@ if( have_posts() ) {
 
         <p class="site-parag"> <?php the_content(); ?> </p>
 
+        <h2 class="site-title"> <?php the_field('second_title'); ?> </p>
+
 <?php
-    the_field('second_title');
+
     }
 };
 //Custom Loop - show latest projects
 $args = array(
     'post_type'              => 'Brand',
     'post_status'            => 'publish',
-    'posts_per_page'         => 3,
+    // 'posts_per_page'         => 3,
 );
 
 // The Query

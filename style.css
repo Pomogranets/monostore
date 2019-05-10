@@ -215,3 +215,177 @@ footer .social-icons i {
     float: right;
     margin-top: 16px;
   }
+
+/*----------- Homepage -----------*/
+
+.front-page-body {
+	max-width: 1080px;
+	margin: auto;
+	text-align: center;
+}
+
+.front-page-body h2 {
+	margin-top: 56px;
+	margin-bottom: 16px;
+}
+
+.wp-block-woocommerce-product-new + h2 {
+	margin-top: 0px;
+}
+
+
+.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+	display: none;
+}
+
+.button.product_type_variable.add_to_cart_button {
+	display: none;
+}
+
+.woocommerce-Price-amount.amount {
+	color: #A7A6A2;
+}
+
+.front-page-body ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.front-page-body .blocks-gallery-item {
+	position: relative;
+	margin: 0px;
+}
+
+
+.front-page-body .blocks-gallery-item::after {
+ 	content: "";
+	position: absolute;
+	display: inline-block;
+    vertical-align: middle;
+	line-height: normal;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.72);
+ 	background-image: url(http://monostore.local/wp-content/uploads/2019/05/Instagram.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #FEFEFE;
+	opacity: 1;
+	
+	transition: opacity .2s, visibility .2s;
+}
+
+
+.front-page-body .blocks-gallery-item + .blocks-gallery-item::after{
+	background-image: url(http://monostore.local/wp-content/uploads/2019/05/Facebook.png);
+}
+
+
+/*----------- Homepage -----------*/
+
+.error-page-body {
+	max-width: 1080px;
+	margin: auto;
+	text-align: center;
+}
+
+.error-header {
+	font-size: 72px;
+	margin: 32px 0px;
+}
+
+.error-page-body button {
+	margin: 48px 16px;
+}
+
+/*----------- Webshop -----------*/
+
+.webshop-page-body {
+	max-width: 1080px;
+	margin: auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.webshop-page-body h2 {
+	font-size: 16px;
+	margin-top: 8px;
+	width: 100%;
+}
+
+.webshop-page-body li {
+	display: inline-block;
+	text-align: center;
+	width: 33%;
+	box-sizing: border-box;
+	padding: 0px 16px;
+	margin-top: 24px;
+}
+
+/* Price */
+
+.webshop-page-body li span {
+	font-size: 14px;
+	color: #A7A6A2;
+}
+
+/* Product Images */
+.webshop-page-body li a {
+	max-width: 100%;
+}
+
+.webshop-page-body li a img {
+	width: 100%;
+	height: auto;
+	margin: 0px;
+}
+
+/* Removed "read more" button */
+
+.webshop-page-body li a + a {
+	display: none;
+}
+
+.woocommerce-result-count {
+	display: none;
+}
+
+/* the product catalogue */
+
+.webshop-page-body ul {
+	width: 100%;
+	text-align: left;
+}
+
+/*----------- Webshop single page -----------*/
+
+.tabs.c-tabs {
+	display: none;
+}
+
+.product_meta {
+	display: none;
+}
+
+.woocommerce-Tabs-panel h2 {
+	display: none;
+}
+
+.woocommerce-product-gallery__image {
+	width: 50%;
+	margin: 0px;
+}
+
+.woocommerce-product-gallery__image img {
+	margin-top: 16px;
+}
+
+.woocommerce-product-gallery__image .wp-post-image {
+	width: 100%;
+	height: auto;
+	margin-top: 0px;
+}
+
+.summary.entry-summary {
+	float: right;
+}

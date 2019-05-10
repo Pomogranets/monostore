@@ -132,6 +132,11 @@ function add_google_fonts() {
 
 add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
 
-
+//woocommerce support
+function customtheme_add_woocommerce_support()
+ {
+add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'customtheme_add_woocommerce_support' );
 
 ?>

@@ -14,7 +14,7 @@ if( have_posts() ) {
 
         <h2 class="subheadline"><?php the_field('subheadline'); ?></h2>
 
-        <p class="site-parag"> <?php the_content(); ?> </p>
+        <div class="site-parag"> <?php the_content(); ?> </div>
 
         <h2 class="site-title"> <?php the_field('second_title'); ?> </h2>
 

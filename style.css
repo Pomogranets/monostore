@@ -44,6 +44,10 @@ ul, li, ol {
   padding: 0;
 }
 
+.site-container {
+ max-width: 1080px;
+}
+
 /*----------- Header -----------*/
 header {
   overflow: hidden;
@@ -51,7 +55,7 @@ header {
 }
 
 header .main-logo {
-  width: 15%;
+  width: 10%;
   height: auto;
   float: left;
   margin-right: 30px;
@@ -167,11 +171,11 @@ footer .social-icons i {
     border: 1px solid #000;
     width: 100%;
     z-index: 2;
-    font-family:"Times New Roman", Times, serif;  
+    font-family:"Times New Roman", Times, serif;
     height: 100px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-      
+
   }
 
   #contact-form > textarea:focus {
@@ -198,7 +202,7 @@ footer .social-icons i {
     margin: 0 0 16px 0;
    }
 
-  
+
   .contact-content {
     width: 45%;
     text-align: center;
@@ -252,7 +256,7 @@ footer .social-icons i {
 	background-repeat: no-repeat;
 	color: #FEFEFE;
 	opacity: 1;
-	
+
 	transition: opacity .2s, visibility .2s;
 }
 
@@ -278,11 +282,3 @@ footer .social-icons i {
 .error-page-body button {
 	margin: 48px 16px;
 }
-
-
-
-
-
-
-
-

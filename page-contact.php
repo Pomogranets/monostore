@@ -79,6 +79,14 @@ echo '<section id="form-contact">
 </form>
 </section>
 
+';
+
+//Sidebar for contact info widget
+if ( is_active_sidebar( 'contact' ) ) {
+  dynamic_sidebar( 'contact' );
+}
+
+/* This is the code for the widget > use a text widget (then add the html code to the text editor)
 <section id="contact-info">
 	<div>
     <h3>Kontakt:</h3>
@@ -101,7 +109,7 @@ echo '<section id="form-contact">
         Söndag: stängt. <br>
         (med reservation för ändringar)</p>
     </div>
-</section>';
+</section>';*/
 
 echo '</div>';
 

@@ -12,7 +12,7 @@ if( have_posts() ) {
         the_post_thumbnail('small_thumbnail',  array( 'class' => 'about-image' ));
         ?>
 
-        <h2 class="subheadline"><?php the_field('subheadline'); ?></h2>
+      
 
         <p class="site-parag"> <?php the_content(); ?> </p>
 
@@ -26,7 +26,7 @@ if( have_posts() ) {
 $args = array(
     'post_type'              => 'Brand',
     'post_status'            => 'publish',
-    // 'posts_per_page'         => 3,
+    'posts_per_page'         => 3,
 );
 
 // The Query

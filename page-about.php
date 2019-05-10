@@ -9,19 +9,14 @@ if( have_posts() ) {
         <h1 class="site-title"><?php the_title(); ?> </h1>
 
         <?php
-        the_post_thumbnail('single_large',  array( 'class' => 'about-image' ));
+        the_post_thumbnail('small_thumbnail',  array( 'class' => 'about-image' ));
         ?>
 
-      <div class="side-column">
+        <h2 class="subheadline"><?php the_field('subheadline'); ?></h2>
 
+        <p class="site-parag"> <?php the_content(); ?> </p>
 
-          <h2><?php the_field('subheadline'); ?></h2>
-
-
-          <p class="site-parag"> <?php the_content(); ?> </p>
-
-          <p> <?php the_field('second_title'); ?> </p>
-      </div>
+        <p> <?php the_field('second_title'); ?> </p>
 
 <?php
 

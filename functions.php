@@ -125,14 +125,6 @@ function change_logo_class($html) {
 	return $html;
 }
 
-//add google fonts
-// function add_google_fonts() {
-//       wp_enqueue_style( 'custom-google-fonts', '<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:400,700,800" rel="stylesheet">', false );
-// }
-//
-// add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
-
-
 //Register our sidebars and widgetized areas.
 
 function my_widgets_init() {

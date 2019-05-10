@@ -16,7 +16,7 @@ if( have_posts() ) {
 
         <p class="site-parag"> <?php the_content(); ?> </p>
 
-        <h2 class="site-title"> <?php the_field('second_title'); ?> </p>
+        <h2 class="site-title"> <?php the_field('second_title'); ?> </h2>
 
 <?php
 

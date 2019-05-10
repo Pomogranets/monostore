@@ -24,7 +24,7 @@ if( have_posts() ) {
 };
 //Custom Loop - show latest projects
 $args = array(
-    'post_type'              => 'varumarke',
+    'post_type'              => 'varumarken',
     'post_status'            => 'publish',
     // 'posts_per_page'         => 3,
 );

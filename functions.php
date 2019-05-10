@@ -75,7 +75,7 @@ function brands_post_type() {
     );
 
     /* Register the post type. */
-    register_post_type('brand', $args );
+    register_post_type('Brand', $args );
 }
 /* Register custom post types on the 'init' hook. */
 add_action( 'init', 'brands_post_type' );

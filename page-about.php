@@ -12,14 +12,12 @@ if( have_posts() ) {
         the_post_thumbnail('small_thumbnail',  array( 'class' => 'about-image' ));
         ?>
 
-      
+        <h2 class="subheadline"><?php the_field('subheadline'); ?></h2>
 
         <p class="site-parag"> <?php the_content(); ?> </p>
 
-        <p> <?php the_field('second_title'); ?> </p>
-
 <?php
-
+    the_field('second_title');
     }
 };
 //Custom Loop - show latest projects

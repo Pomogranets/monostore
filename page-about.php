@@ -9,19 +9,14 @@ if( have_posts() ) {
         <h1 class="site-title"><?php the_title(); ?> </h1>
 
         <?php
-        the_post_thumbnail('single_large',  array( 'class' => 'about-image' ));
+        the_post_thumbnail('small_thumbnail',  array( 'class' => 'about-image' ));
         ?>
 
-      <div class="side-column">
+        <h2 class="subheadline"><?php the_field('subheadline'); ?></h2>
 
+        <div class="site-parag"> <?php the_content(); ?> </div>
 
-          <?php if( get_field('subheadline') ): ?>
-              <h2><?php the_field('subheadline'); ?></h2>
-          <?php endif; ?>
-
-          <p class="site-parag"> <?php the_content(); ?> </p>
-
-      </div>
+        <h2 class="site-title"> <?php the_field('second_title'); ?> </h2>
 
 <?php
 
@@ -29,17 +24,15 @@ if( have_posts() ) {
 };
 //Custom Loop - show latest projects
 $args = array(
-    'post_type'              => 'brands',
+    'post_type'              => 'varumarke',
     'post_status'            => 'publish',
-    'posts_per_page'         => 3,
+    // 'posts_per_page'         => 3,
 );
 
 // The Query
 $query = new WP_Query( $args );
 ?>
-  <div class="all-grid">
-
-    <h2 class="sub-title"> Varumärken </h2>
+  <div class="all-brands">
 
 <?php
 if ( $query->have_posts() ) {
@@ -53,8 +46,8 @@ if ( $query->have_posts() ) {
     <div class="grid-container">
 
         <a href=" <?php the_permalink(); ?>">
-          <figure class="project-thumbnail"> <?php the_post_thumbnail('grid_thumbnail',  array( 'class' => 'project-grid' )); ?> </figure>
-          <figcaption class="project-title"> <?php the_title(); ?> </figcaption>
+          <figure class="brand-thumbnail"> <?php the_post_thumbnail('small_thumbnail',  array( 'class' => 'brand-grid' )); ?> </figure>
+          <figcaption class="brand-title"> <?php the_title(); ?> </figcaption>
         </a>
       </div>
 

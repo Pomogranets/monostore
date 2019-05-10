@@ -75,7 +75,7 @@ function brands_post_type() {
     );
 
     /* Register the post type. */
-    register_post_type('Brand', $args );
+    register_post_type('varumarke', $args );
 }
 /* Register custom post types on the 'init' hook. */
 add_action( 'init', 'brands_post_type' );
@@ -124,14 +124,6 @@ function change_logo_class($html) {
   $html = str_replace('class="custom-logo-link"', 'class="main-logo-link"', $html);
 	return $html;
 }
-
-//add google fonts
-function add_google_fonts() {
-      wp_enqueue_style( 'custom-google-fonts', '<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:400,700,800" rel="stylesheet">', false );
-}
-
-add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
-
 
 //Register our sidebars and widgetized areas.
 

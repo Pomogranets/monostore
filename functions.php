@@ -22,7 +22,7 @@ function art_post_type() {
           'singular_name'      => __( 'Art',                    'project-textdomain' ),
           'menu_name'          => __( 'Arts',                   'project-textdomain' ),
           'name_admin_bar'     => __( 'Arts',                   'project-textdomain' ),
-          'add_new'            => __( 'Add New',                    'project-textdomain' ),
+          'add_new'            => __( 'Add New',                'project-textdomain' ),
           'add_new_item'       => __( 'Add New Art',            'project-textdomain' ),
           'edit_item'          => __( 'Edit Art',               'project-textdomain' ),
           'new_item'           => __( 'New Art',                'project-textdomain' ),

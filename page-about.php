@@ -1,5 +1,5 @@
 <?php get_header();
-
+echo "I AM WORKING";
 if( have_posts() ) {
 
     while ( have_posts() ){
@@ -15,12 +15,12 @@ if( have_posts() ) {
       <div class="side-column">
 
 
-          <?php if( get_field('subheadline') ): ?>
-              <h2><?php the_field('subheadline'); ?></h2>
-          <?php endif; ?>
+          <h2><?php the_field('subheadline'); ?></h2>
+
 
           <p class="site-parag"> <?php the_content(); ?> </p>
 
+          <p> <?php the_field('second_title'); ?> </p>
       </div>
 
 <?php

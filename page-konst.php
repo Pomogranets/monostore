@@ -10,50 +10,9 @@ if( have_posts() ) {
 
         <div class="site-parag"> <?php the_content(); ?> </div>
 
-
 <?php
-
     }
 };
-//Custom Loop - show latest projects
-$args = array(
-    'post_type'              => 'konst',
-    'post_status'            => 'publish',
-    'posts_per_page'         => 3,
-);
 
-// The Query
-$query = new WP_Query( $args );
-?>
-  <div class="all-art">
-
-<?php
-if ( $query->have_posts() ) {
-
-    while ( $query->have_posts() ) {
-
-        $query->the_post();
-
-    ?>
-
-    <div class="grid-container">
-
-          <figure class="art-thumbnail"> <?php the_post_thumbnail('single_art',  array( 'class' => 'art-grid' )); ?> </figure>
-          <figcaption class="art-title"> <?php the_title(); ?> </figcaption>
-
-      </div>
-
-    <?php
-    }
-
-} else {
-
-    echo "There are no posts to be shown";
-}
-
-wp_reset_postdata();
-?>
-    </div>
-<?php
 get_footer();
 ?>

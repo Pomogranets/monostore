@@ -6,7 +6,7 @@ if( have_posts() ) {
 
         the_post();
 
-        the_post_thumbnail('medium',  array( 'class' => 'brand-image' ));
+        the_post_thumbnail('large',  array( 'class' => 'brand-image' ));
 
         ?>
 
@@ -19,7 +19,6 @@ if( have_posts() ) {
 <?php
       }
     }
-
 
 get_footer();
 ?>

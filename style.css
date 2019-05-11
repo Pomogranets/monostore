@@ -110,6 +110,7 @@ header li a:active{
   width: 65%;
   margin: 0 auto;
   color: #888;
+  line-height: 130%;
 }
 
 .all-brands {
@@ -150,6 +151,7 @@ header li a:active{
 .brand-parag {
   width: 60%;
   margin: 0 auto;
+  line-height: 130%;
 }
 
 .brand-btn {

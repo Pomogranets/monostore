@@ -101,7 +101,7 @@ add_theme_support( 'post-formats' );
 add_image_size( 'header_logo', 100, 100, true );
 add_image_size( 'small_thumbnail', 300, 300, true );
 add_image_size( 'single_art', 420, 420, true );
-add_image_size( 'extra_large', 750, 250, true );
+add_image_size( 'thumbnail_large', 750, 250, true );
 
 //Adding a custom logo
 function themename_custom_logo_setup() {

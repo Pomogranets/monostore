@@ -119,6 +119,15 @@ header li a:active{
 }
 
 /*----------- Footer -----------*/
+
+.arrow.icon {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  color: #A7A6A2;
+  font-size: 150%;
+}
+
 footer {
   background-color: #000;
   padding: 16px;
@@ -145,13 +154,15 @@ footer .social-icons i:hover {
   color: #A7A6A2;
 }
 
-footer ul {
+footer > ul {
   margin-top: 32px;
 }
 
-footer li {
+footer ul > li {
   float: left;
+  padding-left: 16px;
 }
+
 /*----------- Contact -----------*/
 #page {
   overflow: hidden;

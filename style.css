@@ -155,6 +155,7 @@ header li a:active{
 }
 
 .brand-btn {
+  font-weight: bold;
   border: 4px solid #000;
   float: right;
   padding: 16px;

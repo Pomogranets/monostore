@@ -62,6 +62,9 @@ if ( $query->have_posts() ) {
 wp_reset_postdata();
 ?>
     </div>
+
+    <a href="<?php the_permalink(); ?>"><i class="fas fa-arrow-up arrow icon"></i></a>
+
 <?php
 get_footer();
 ?>

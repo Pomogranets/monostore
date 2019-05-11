@@ -19,7 +19,7 @@ if( have_posts() ) {
 $args = array(
     'post_type'              => 'konst',
     'post_status'            => 'publish',
-    'posts_per_page'         => 3,
+    // 'posts_per_page'         => 8,
 );
 
 // The Query
@@ -54,6 +54,9 @@ if ( $query->have_posts() ) {
 wp_reset_postdata();
 ?>
     </div>
+
+    <a href="<?php the_permalink(); ?>"><i class="fas fa-arrow-up arrow icon"></i></a>
+    
 <?php
 get_footer();
 ?>

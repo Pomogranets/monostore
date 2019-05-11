@@ -10,7 +10,7 @@ if( have_posts() ) {
 
         ?>
 
-        <h1 class="site-title"><?php the_title(); ?> </h1>
+        <h1 class="brand-title"><?php the_title(); ?> </h1>
 
         <div class="brand-parag"> <?php the_content(); ?> </div>
 

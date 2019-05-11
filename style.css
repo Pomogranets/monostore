@@ -85,32 +85,38 @@ header li a:active{
 }
 
 /*----------- About -----------*/
+
+.about-image {
+  border-radius: 50%;
+}
 .site-title {
-  font-size: 110%px;
+  font-size: 90%;
 }
 
 .site-parag {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 64px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .all-brands {
-  width: 85%;
+  width: 65%;
   margin: 0 auto;
   overflow: hidden;
   text-align: center;
 }
 
 .grid-container {
-  margin: 40px;
+  margin: 32px;
   float: left;
   text-align: center;
 }
 
-
 .grid-container figcaption {
   font-size: 110%;
-  margin: 10px 0 5px 0;
+  margin: 16px 0 16px 0;
+  font-weight: bold;
 }
 
 .grid-container figcaption:hover {
@@ -124,8 +130,11 @@ header li a:active{
   position: fixed;
   bottom: 80px;
   right: 40px;
-  color: #A7A6A2;
   font-size: 150%;
+}
+
+.arrow.icon:hover {
+  color: #A7A6A2;
 }
 
 footer {
@@ -148,6 +157,7 @@ footer p {
 footer .social-icons i {
   color: white;
   font-size: 18px;
+  padding: 16px;
 }
 
 footer .social-icons i:hover {
@@ -155,14 +165,17 @@ footer .social-icons i:hover {
 }
 
 footer > ul {
-  margin-top: 32px;
+  margin: 20px 10px;
 }
 
 footer ul > li {
   float: left;
-  padding-left: 16px;
+  padding-left: 24px;
 }
 
+footer .copyright {
+  clear: left;
+}
 /*----------- Contact -----------*/
 #page {
   overflow: hidden;

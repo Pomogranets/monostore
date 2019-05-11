@@ -47,7 +47,7 @@ if ( $query->have_posts() ) {
 
         <a href=" <?php the_permalink(); ?>">
           <figure class="brand-thumbnail"> <?php the_post_thumbnail('small_thumbnail',  array( 'class' => 'brand-grid' )); ?> </figure>
-          <figcaption class="brand-title"> <?php the_title(); ?> </figcaption>
+          <figcaption class="brand-name"> <?php the_title(); ?> </figcaption>
         </a>
       </div>
 

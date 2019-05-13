@@ -39,7 +39,7 @@ if ( $query->have_posts() ) {
     <div class="grid-container">
 
           <figure class="art-thumbnail"> <?php the_post_thumbnail('single_art',  array( 'class' => 'art-grid' )); ?> </figure>
-          <figcaption class="art-title"> <?php the_title() .' | '. the_title() ; ?>  </figcaption>
+          <figcaption class="art-title"> <?php the_title()." | ".the_title() ; ?>  </figcaption>
 
       </div>
 

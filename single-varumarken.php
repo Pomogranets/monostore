@@ -14,7 +14,7 @@ if( have_posts() ) {
 
         <div class="brand-parag"> <?php the_content(); ?> </div>
 
-        <a class="brand-btn" href=" <?php the_field('link'); ?>"> To Hemsida </a>
+        <a class="brand-btn" href=" <?php the_field('link'); ?>"> Till Hemsida </a>
 
 <?php
       }

@@ -1,8 +1,6 @@
 <?php /* Template Name: Contact-page */
 get_header();
 
-echo '<div id="page">';
-
 if(have_posts()) {
 
     while ( have_posts() ){
@@ -75,7 +73,7 @@ echo '<section id="form-contact">
 	<label for="subject">Ämne</label><br> <br>
 	<label style="top:0px" for="meddelande">Meddelande</label>
 	<textarea name="meddelande" required autocomplete="off"></textarea>
-	<input class="button" type="submit" name="send" value="Skicka">
+	<input class="brand-btn" type="submit" name="send" value="Skicka">
 </form>
 </section>
 

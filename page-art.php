@@ -8,15 +8,8 @@ if( have_posts() ) {
 
         <h1 class="site-title"><?php the_title(); ?> </h1>
 
-        <?php
-        the_post_thumbnail('small_thumbnail',  array( 'class' => 'about-image' ));
-        ?>
-
-        <h2 class="subheadline"><?php the_field('subheadline'); ?></h2>
-
         <div class="site-parag"> <?php the_content(); ?> </div>
 
-        <h2 class="site-title"> <?php the_field('second_title'); ?> </h2>
 
 <?php
 
@@ -24,7 +17,7 @@ if( have_posts() ) {
 };
 //Custom Loop - show latest projects
 $args = array(
-    'post_type'              => 'varumarken',
+    'post_type'              => 'konst',
     'post_status'            => 'publish',
     'posts_per_page'         => -1,
 );
@@ -32,7 +25,7 @@ $args = array(
 // The Query
 $query = new WP_Query( $args );
 ?>
-  <div class="all-brands">
+  <div class="all-art">
 
 <?php
 if ( $query->have_posts() ) {
@@ -45,11 +38,11 @@ if ( $query->have_posts() ) {
 
     <div class="grid-container">
 
-        <a href=" <?php the_permalink(); ?>">
-          <figure class="brand-thumbnail"> <?php the_post_thumbnail('small_thumbnail',  array( 'class' => 'brand-grid' )); ?> </figure>
-          <figcaption class="brand-name"> <?php the_title(); ?> </figcaption>
-        </a>
-      </div>
+          <figure class="art-thumbnail"> <?php the_post_thumbnail('single_art',  array( 'class' => 'art-grid' )); ?> </figure>
+          <figcaption class="art-title"> <?php echo the_field('material')." | ".the_field('size')?>  </figcaption>
+          <figcaption class="art-title"> <?php the_field('name') ?>  </figcaption>
+          <figcaption class="art-title"> <?php the_field('author') ?> | <?php the_field('year')?>  </figcaption>
+    </div>
 
     <?php
     }

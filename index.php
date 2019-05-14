@@ -3,8 +3,6 @@
 <?php /* Template Name: Index */
 get_header();
 
-echo '<div id="page">';
-
 if(have_posts()) {
 
     while ( have_posts() ){

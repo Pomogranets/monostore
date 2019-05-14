@@ -9,7 +9,7 @@ if(have_posts()) {
 
     while ( have_posts() ){
 
-    	echo '<div class="contact-content">';
+    	echo '<div>';
 
     	the_post();
     	

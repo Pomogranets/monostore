@@ -19,7 +19,7 @@ if( have_posts() ) {
 $args = array(
     'post_type'              => 'konst',
     'post_status'            => 'publish',
-    // 'posts_per_page'         => 8,
+    'posts_per_page'         => -1,
 );
 
 // The Query
@@ -39,9 +39,10 @@ if ( $query->have_posts() ) {
     <div class="grid-container">
 
           <figure class="art-thumbnail"> <?php the_post_thumbnail('single_art',  array( 'class' => 'art-grid' )); ?> </figure>
-          <figcaption class="art-title"> <?php echo the_field('material').' | '.the_field('size').'<br>'. the_field('name').' <br> '. the_field('author').' | '.the_field('year'); ?>  </figcaption>
-
-      </div>
+          <figcaption class="art-title"> <?php the_field('material') echo " | " the_field('size')?>  </figcaption>
+          <figcaption class="art-title"> <?php the_field('name') ?>  </figcaption>
+          <figcaption class="art-title"> <?php the_field('author') echo " | " the_field('year')?>  </figcaption>
+    </div>
 
     <?php
     }

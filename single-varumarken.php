@@ -6,7 +6,7 @@ if( have_posts() ) {
 
         the_post();
 
-        the_post_thumbnail('thumbnail_large',  array( 'class' => 'brand-image' ));
+        the_post_thumbnail('large',  array( 'class' => 'brand-image' ));
 
         ?>
 

@@ -22,6 +22,5 @@ if(have_posts()) {
 	echo 'Informationen saknas för tillfället.';
 }
 
-	wp_reset_postdata();
-	get_footer(); 
+get_footer(); 
 ?>

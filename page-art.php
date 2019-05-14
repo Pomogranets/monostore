@@ -39,9 +39,9 @@ if ( $query->have_posts() ) {
     <div class="grid-container">
 
           <figure class="art-thumbnail"> <?php the_post_thumbnail('single_art',  array( 'class' => 'art-grid' )); ?> </figure>
-          <figcaption class="art-title"> <?php the_field('material') echo " | " the_field('size')?>  </figcaption>
+          <figcaption class="art-title"> <?php echo the_field('material')." | ".the_field('size')?>  </figcaption>
           <figcaption class="art-title"> <?php the_field('name') ?>  </figcaption>
-          <figcaption class="art-title"> <?php the_field('author') echo " | " the_field('year')?>  </figcaption>
+          <figcaption class="art-title"> <?php the_field('author') ?> | <?php the_field('year')?>  </figcaption>
     </div>
 
     <?php

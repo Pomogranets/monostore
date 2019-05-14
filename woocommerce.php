@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); /* Template Name: Webbshop */  ?>
 
 	<main class="webshop-page-body">
 		<?php woocommerce_content(); ?>

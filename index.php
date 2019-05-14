@@ -10,7 +10,7 @@ if(have_posts()) {
     	echo '<div>';
 
     	the_post();
-    	
+
     	the_title('<h1>', '</h1><br>');
 
     	the_content('<p>', '</p>');
@@ -22,5 +22,5 @@ if(have_posts()) {
 	echo 'Informationen saknas för tillfället.';
 }
 
-get_footer(); 
+get_footer();
 ?>

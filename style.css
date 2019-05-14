@@ -380,7 +380,7 @@ footer .copyright {
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.72);
- 	background-image: url(http://monostore.local/wp-content/uploads/2019/05/Instagram.png);
+ 	background-image: url(http://wp1.hj.se/~olem1794/wp-content/uploads/2019/05/Instagram.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	color: #FEFEFE;
@@ -392,7 +392,7 @@ footer .copyright {
 
 
 .front-page-body .blocks-gallery-item + .blocks-gallery-item::after{
-	background-image: url(http://monostore.local/wp-content/uploads/2019/05/Facebook.png);
+	background-image: url(http://wp1.hj.se/~olem1794/wp-content/uploads/2019/05/Facebook.png);
 }
 
 /*----------- 404 page -----------*/

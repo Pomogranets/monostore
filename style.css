@@ -172,7 +172,7 @@ padding-left: 5px;
 /*----------- Art Page -----------*/
 .all-art {
   margin: 0 auto;
-  width: 50%;
+  width: 90%;
 }
 
 .grid-container.art {
@@ -182,7 +182,12 @@ padding-left: 5px;
 .art-title {
   font-weight: 400;
   text-align: left;
-  margin-bottom: 5px;
+  margin: 0;
+  line-height: 150%;
+}
+
+.art-thumbnail {
+  padding-bottom: 16px; 
 }
 
 /*----------- Footer -----------*/

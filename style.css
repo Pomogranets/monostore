@@ -219,11 +219,6 @@ footer .copyright {
   padding: 16px;
 }
 /*----------- Contact -----------*/
-#page {
-  overflow: hidden;
-  max-width: 1080px;
-  margin: 0 auto;
-}
 
 /*Contact Form*/
 #form-contact {

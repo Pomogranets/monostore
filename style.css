@@ -501,12 +501,13 @@ footer .copyright {
 	border: none;
 	border-bottom: solid 1px #000;
 	border-radius: 0%;
-	-moz-border-radius: 0px !important;
-	-webkit-border-radius: 0px !important;
-	border-radius: 0px !important;
 	-webkit-appearance: none !important;
 	font-size: 14px;
 
+}
+
+.woocommerce ul.products li.product .price {
+	color: #000 !important;
 }
 
 /*----------- Webshop single page -----------*/
@@ -561,7 +562,7 @@ footer .copyright {
 }
 
 .woocommerce div.product form.cart {
-	width: 310px;
+	width: 325px;
 	margin: 24px auto !important;
 	text-align: center !important;
 }
@@ -598,9 +599,6 @@ form.cart {
 	border: none;
 	border-bottom: solid 1px #000;
 	border-radius: 0%;
-	-moz-border-radius: 0px !important;
-	-webkit-border-radius: 0px !important;
-	border-radius: 0px !important;
 	-webkit-appearance: none !important;
 	font-size: 14px;
 

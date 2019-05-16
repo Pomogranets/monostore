@@ -11,7 +11,7 @@ if(have_posts()) {
 
     	the_post();
 
-    	the_title('<h1>', '</h1><br>');
+    	the_title('<h1 class="top-header">', '</h1><br>');
 
     	the_content('<p>', '</p>');
 

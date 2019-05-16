@@ -153,3 +153,10 @@ function my_contact_init() {
 
 }
 add_action( 'widgets_init', 'my_contact_init' );
+
+/* REAL WOO COMMERCE SUPPORT 
+function mytheme_add_woocommerce_support() {
+	add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+*/

@@ -481,8 +481,32 @@ footer .copyright {
 	text-align: center;
 }
 
-.woocommerce-ordering {
-	margin: auto;
+.woocommerce .woocommerce-ordering, .woocommerce-page .woocommerce-ordering {
+	margin: 0px auto 24px auto !important;
+	float: none !important;
+	width: 30%
+}
+
+.woocommerce .woocommerce-ordering select {
+	background-color: transparent !important;
+	background-image: url(http://monostore.local/wp-content/uploads/2019/05/icon-ios7-arrow-down-512.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 22px 22px;
+	position: relative;
+	min-width: 100% !important;
+	color: #A7A6A2;
+	display: block;
+	padding: 4px;
+	border: none;
+	border-bottom: solid 1px #000;
+	border-radius: 0%;
+	-moz-border-radius: 0px !important;
+	-webkit-border-radius: 0px !important;
+	border-radius: 0px !important;
+	-webkit-appearance: none !important;
+	font-size: 14px;
+
 }
 
 /*----------- Webshop single page -----------*/
@@ -497,6 +521,7 @@ footer .copyright {
 
 .woocommerce ul.products li.product .onsale {
 	left: auto !important; 
+	right: 5px !important;
 }
 
 .woocommerce span.onsale {
@@ -519,10 +544,11 @@ footer .copyright {
 
 .woocommerce div.product form.cart div.quantity {
 	border: solid #A7A6A2 2px;
-	width: 150px;
+	width: 148px;
 	line-height: 44px;
 	height: 44px;
 	text-align: center;
+	margin: 0px 0px 0px 0px !important;
 	margin-right: 10px !important;
 }
 
@@ -543,4 +569,47 @@ footer .copyright {
 form.cart {
 	text-align: center !important;
 	padding: 0px;
+}
+
+.woocommerce div.product .woocommerce-tabs .panel + p {
+	margin-top: 24px !important;
+}
+
+.woocommerce ul.products li.product a img {
+	margin-top: 8px !important;
+	margin-bottom: 8px !important;
+}
+
+.woocommerce div.product form.cart .reset_variations {
+	display: none !important;
+}
+
+.woocommerce div.product form.cart .variations select {
+	background-color: transparent !important;
+	background-image: url(http://monostore.local/wp-content/uploads/2019/05/icon-ios7-arrow-down-512.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 22px 22px;
+	position: relative;
+	min-width: 100% !important;
+	color: #A7A6A2;
+	display: block;
+	padding: 4px;
+	border: none;
+	border-bottom: solid 1px #000;
+	border-radius: 0%;
+	-moz-border-radius: 0px !important;
+	-webkit-border-radius: 0px !important;
+	border-radius: 0px !important;
+	-webkit-appearance: none !important;
+	font-size: 14px;
+
+}
+
+.woocommerce div.product div.images.woocommerce-product-gallery {
+	margin-bottom: 64px!important;
+}
+
+.woocommerce div.product {
+	margin-top: 16px !important;
 }

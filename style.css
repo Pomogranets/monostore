@@ -621,6 +621,7 @@ form.cart {
   background: none !important;
   padding: 16px !important;
   margin: 16px 0 220px 0 !important;
+  color: #000 !important;
 }
 
 .woocommerce .cart .button, .woocommerce .cart input.button {
@@ -645,8 +646,12 @@ form.cart {
 .cart_totals h2 {
 margin-bottom: 16px;
 }
+.cart_totals a {
 
+}
 .checkout-button.button.alt.wc-forward {
-  width: 100% !important;
-  margin-bottom: 220px !important;
+  width: auto !important;
+  margin-bottom: 128px !important;
+  padding: 16px !important;
+  height: auto !important;
 }

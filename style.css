@@ -634,7 +634,7 @@ form.cart {
 
 .input-text {
   border: 2px solid #000;
-  padding: 4px 16px;
+  padding: 16px;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
@@ -644,14 +644,17 @@ form.cart {
 }
 
 .cart_totals h2 {
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
-.cart_totals a {
 
-}
 .checkout-button.button.alt.wc-forward {
   width: auto !important;
   margin-bottom: 128px !important;
   padding: 16px !important;
   height: auto !important;
+}
+
+.checkout-button.button.alt.wc-forward:hover {
+  background-color: #000 !important;
+  color: #fff !important;
 }

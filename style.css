@@ -491,7 +491,7 @@ footer .copyright {
 
 .woocommerce .woocommerce-ordering select {
 	background-color: transparent !important;
-	background-image: url(http://monostore.local/wp-content/uploads/2019/05/icon-ios7-arrow-down-512.png);
+	background-image: url(http://wp1.hj.se/~olem1794/wp-content/uploads/2019/05/icon-ios7-arrow-down-512.png);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: 22px 22px;
@@ -541,24 +541,29 @@ footer .copyright {
  	border: 4px solid #000 !important;
 	width: 150px !important;
 	height: 48px !important;
+	line-height: 48px !important;
+	vertical-align: none !important;
   	background: none !important;
 	color: #000 !important;
-	margin: 0px auto 0px auto;
+	float: left !important;
+	padding: 0px !important;
+	margin: 0px !important;
 }
 
 .woocommerce div.product form.cart div.quantity {
 	border: solid #A7A6A2 2px;
-	width: 148px;
+	width: 138px !important;
 	line-height: 44px;
 	height: 44px;
 	text-align: center;
 	margin: 0px 0px 0px 0px !important;
-	margin-right: 10px !important;
+	margin-right: 20px !important;
 }
 
 .woocommerce .quantity .qty {
 	border: none;
-	width: 130px !important;
+	width: 128px !important;
+	padding: 0px !important;
 	font-size: 16px;
 	text-align: center;
 	margin-left: 10px;
@@ -590,7 +595,7 @@ form.cart {
 
 .woocommerce div.product form.cart .variations select {
 	background-color: transparent !important;
-	background-image: url(http://monostore.local/wp-content/uploads/2019/05/icon-ios7-arrow-down-512.png);
+	background-image: url(http://wp1.hj.se/~olem1794/wp-content/uploads/2019/05/icon-ios7-arrow-down-512.png);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: 22px 22px;

@@ -15,7 +15,7 @@ function konst_post_type() {
 
         'supports' => array('title','editor','author','thumbnail', 'custom-fields'),
 
-        'taxonomies' => array( 'category', ' tag' ),
+        // 'taxonomies' => array( 'category', ' tag' ),
 
         'labels' => array(
           'name'               => __( 'Konst',                   'project-textdomain' ),
@@ -55,7 +55,7 @@ function varumarken_post_type() {
 
         'supports' => array('title','editor','author','thumbnail', 'custom-fields'),
 
-        'taxonomies' => array( 'category', ' tag' ),
+        // 'taxonomies' => array( 'category', ' tag' ),
 
         'labels' => array(
           'name'               => __( 'Varumarken',                   'project-textdomain' ),
@@ -154,7 +154,7 @@ function my_contact_init() {
 }
 add_action( 'widgets_init', 'my_contact_init' );
 
-/* REAL WOO COMMERCE SUPPORT 
+/* REAL WOO COMMERCE SUPPORT
 function mytheme_add_woocommerce_support() {
 	add_theme_support( 'woocommerce' );
 }

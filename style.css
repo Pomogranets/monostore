@@ -89,8 +89,9 @@ header li a:active{
 background-image: url('http://wp1.hj.se/~olem1794/wp-content/uploads/2019/05/icons8-add-shopping-cart-90.png');
 background-repeat: no-repeat;
 background-position: left;
-background-size: 16px;
-padding-left: 64px;
+background-size: 16%;
+padding-left: 8px;
+margin-left: 64px;
 }
 
 /*----------- About -----------*/

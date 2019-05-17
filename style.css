@@ -546,7 +546,7 @@ footer .copyright {
 	color: #000 !important;
 	float: left !important;
 	padding: 0px !important;
-	margin: 0px auto 0px auto;
+	margin: 0px !important;
 }
 
 .woocommerce div.product form.cart div.quantity {

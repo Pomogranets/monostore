@@ -36,7 +36,7 @@ if ( $query->have_posts() ) {
 
     ?>
 
-    <div class="grid-container">
+    <div class="grid-container art">
 
           <figure class="art-thumbnail"> <?php the_post_thumbnail('single_art',  array( 'class' => 'art-grid' )); ?> </figure>
           <figcaption class="art-title"> <?php  the_field('material'); ?> | <?php the_field('size'); ?>  </figcaption>

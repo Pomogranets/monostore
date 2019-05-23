@@ -38,7 +38,7 @@ if(have_posts()) {
               </body>
             </html>';
 
-    $headers = 'From: '.$name.' <'.$mail.'>\r\n';
+    $headers = 'From: '.$uname.' <'.$mail.'>\r\n';
     $headers .= 'Reply-To: '.$mail.'\r\n';
     $headers .= 'MINE-Version: 1.0\r\n';
     $headers .= 'Content-type: text/html; charset-utf-8';
@@ -47,11 +47,11 @@ if(have_posts()) {
 
    if($sent)
    {
-     echo "mail sent - currently not working"; //does not work
+     echo "Mail sent - currently not working"; //does not work
    }
    else
    {
-     echo "mail failed";
+     echo "Mail failed";
    }
  }
 
